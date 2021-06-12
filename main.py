@@ -8,7 +8,7 @@ def main():
     html_temp1 = """<div>
                         <h4 >Exploratory data Analysis Automator</h4>
                     </div>
-                    </br>"""
+                </br>"""
     st.markdown(html_temp1, unsafe_allow_html=True)
 
     menu = ["Home", "EDA", "About"]
@@ -25,7 +25,6 @@ def main():
     st.sidebar.markdown(
         """ Developed by Komali Beeram    """)
     if choice == "Home":
-        # color codes  ff1a75  6D7B8D
         html_temp2 = """<div>
                             <h4>This is the Exploratory data Analysis Automator  created using Streamlit framework and pandas-profiling library.</h4>
                         </div>
@@ -33,12 +32,11 @@ def main():
         st.markdown(html_temp2, unsafe_allow_html=True)
 
     elif choice == "EDA":
-        html_temp3 = """
-                        		<div>
-                        		<h4 >Upload file Your file in csv formate and perform Exploratory Data Analysis</h4>
-                        		<h5 >Make sure your columns have correct data types before uploading.</h5>
-                        		</div>
-                        		<br></br>"""
+        html_temp3 = """<div>
+                        	<h4 >Upload file Your file in csv formate and perform Exploratory Data Analysis</h4>
+                        	<h5 >Make sure your columns have correct data types before uploading.</h5>
+                        </div>
+                    <br></br>"""
 
         st.markdown(html_temp3, unsafe_allow_html=True)
         st.subheader("Perform Exploratory data Analysis with Pandas Profiling Library")
@@ -65,7 +63,7 @@ def main():
     elif choice == "About":
         html_temp4 = """
                        		<div>
-                       		<h4>This Application is developed by Komali Beeram using Streamlit Framework.</h4>
+                       		<h4>This Application is developed by Komali Beeram using Streamlit Framework for The Mentor.</h4>
                        		</div>
                        		<br></br>
                        		<br></br>"""
